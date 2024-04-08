@@ -18,6 +18,7 @@ body {
   height: 200px;
   border-radius: 50%;
   perspective: 800px;
+  right: 45%;
 }
 
 .inner {
