@@ -39,7 +39,7 @@ body {
 .inner.two {
   right: 0;
   top: 0;
-  animation: rotateOne 1s linear infinite;
+  animation: rotateTwo 1s linear infinite;
   border-bottom: 3px solid #efeffa;
   box-shadow: 0px 4px 10px 1px rgba(0, 210, 255, 1);
 }
@@ -49,11 +49,23 @@ body {
   bottom: 0;
   animation: rotateOne 1s linear infinite;
   border-bottom: 3px solid #efeffa;
-  box-shadow: 0px 4px 10px 1px rgba(0, 210, 255, 1);
+  box-shadow: 0px 4px 10px 1px rgba(255, 0, 0, 1);
 }
 
 @keyframes rotateOne {
   0% {
-    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg)
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg)
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg)
+  }
+}
+
+@keyframes rotateTwo {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg)
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg)
   }
 }
