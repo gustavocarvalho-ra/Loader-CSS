@@ -33,4 +33,27 @@ body {
   top: 0;
   animation: rotateOne 1s linear infinite;
   border-bottom: 3px solid #efeffa;
+  box-shadow: 0px 4px 10px 1px rgba(0, 210, 255, 1);
+}
+
+.inner.two {
+  right: 0;
+  top: 0;
+  animation: rotateOne 1s linear infinite;
+  border-bottom: 3px solid #efeffa;
+  box-shadow: 0px 4px 10px 1px rgba(0, 210, 255, 1);
+}
+
+.inner.three {
+  right: 0;
+  bottom: 0;
+  animation: rotateOne 1s linear infinite;
+  border-bottom: 3px solid #efeffa;
+  box-shadow: 0px 4px 10px 1px rgba(0, 210, 255, 1);
+}
+
+@keyframes rotateOne {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg)
+  }
 }
