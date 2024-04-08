@@ -34,7 +34,7 @@ body {
   top: 0;
   animation: rotateOne 1s linear infinite;
   border-bottom: 3px solid #efeffa;
-  box-shadow: 0px 4px 10px 1px rgba(0, 210, 255, 1);
+  box-shadow: 0px 4px 10px 1px rgb(160, 233, 250);
 }
 
 .inner.two {
@@ -48,12 +48,23 @@ body {
 .inner.three {
   right: 0;
   bottom: 0;
-  animation: rotateOne 1s linear infinite;
+  animation: rotateThree 1s linear infinite;
   border-bottom: 3px solid #efeffa;
   box-shadow: 0px 4px 10px 1px rgba(255, 0, 0, 1);
 }
 
 @keyframes rotateOne {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    filter: hue-rotate(90deg)
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    filter: hue-rotate(360deg)
+  }
+}
+
+@keyframes rotateTwo {
   0% {
     transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg)
   }
@@ -62,7 +73,7 @@ body {
   }
 }
 
-@keyframes rotateTwo {
+@keyframes rotateThree {
   0% {
     transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg)
   }
